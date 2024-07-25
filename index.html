@@ -1,1 +1,46 @@
-hii
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Hii</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 10em;
+            position: absolute;
+            animation: neon 1.5s infinite alternate, move 10s infinite linear;
+        }
+
+        @keyframes neon {
+            0% { color: #ff00ff; }
+            25% { color: #00ff00; }
+            50% { color: #00ffff; }
+            75% { color: #ff0000; }
+            100% { color: #ffff00; }
+        }
+
+        @keyframes move {
+            0% { top: 0; left: 0; transform: translate(0, 0); }
+            25% { top: 0; left: 100%; transform: translate(-100%, 0); }
+            50% { top: 100%; left: 100%; transform: translate(-100%, -100%); }
+            75% { top: 100%; left: 0; transform: translate(0, -100%); }
+            100% { top: 0; left: 0; transform: translate(0, 0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hii</h1>
+</body>
+</html>
+
